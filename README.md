@@ -1,6 +1,13 @@
+This is a customizable template to make scrollytelling stories (scrollable text over static images or animation, a la NYT). Uses React and [React Scrollama] (https://www.npmjs.com/package/react-scrollama). Currently in BETA with the following updates in progress
+- Making the data input flow better
+- Figuring out better way to format image and text
+- Adding second template more specific to D3 visualizations
+
+Instructions below for (a) how to run this demo app locally and (b) how to customize it and insert your own stories.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to run this project locally
 
 In the project directory, you can run:
 
@@ -25,44 +32,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to customize
 
-### `npm run eject`
+Currently, the text that appears as you scroll is taken from 'src/assets/data/narration.json.' The JSON consists of a dictionary, in which each entry has a key and a description. The order of entries in this dictionary will determine the order of text that appears as you scroll. The key of each entry doesn't really matter itself but will determine which image is displayed with the text of that entry. For example, the entry that is fourth in your dictionary and has a key of "hello" and a description of "this is my text" will appear fourth as you scroll. The image called "hello.png" (in your 'src/assets/data/images' folder) will be displayed along with the description "this is my text."
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You should enter the text you want to display in your story into 'narration.json' in order, with one piece of scrollable text per entry in the dictionary. Make all your keys unqiue and make sure the key for an entry corresponds to the name of the image for that entry. Images should be put in 'src/assets/data/images'.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
