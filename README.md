@@ -1,9 +1,9 @@
-This is a customizable template to make scrollytelling stories (scrollable text over static images or animation, a la NYT). Uses React and [React Scrollama] (https://www.npmjs.com/package/react-scrollama). Currently in BETA with the following updates in progress
-- Making the data input flow better
-- Figuring out better way to format image and text
-- Adding second template more specific to D3 visualizations
+This is a customizable template to make scrollytelling stories (scrollable text over static images or animation, a la NYT). Uses React and [React Scrollama](https://www.npmjs.com/package/react-scrollama). Currently in *BETA* with the following updates in progress
+- Making the data input flow better than writing the story, piece by piece, into a JSON
+- Developing new layout options (e.g. translucent text box on top of a full-screen image, removing the Bootstrap card for the image)
+- Adding second template with a better foundation and instructions for D3 visualizations
 
-Instructions below for (a) how to run this demo app locally and (b) how to customize it and insert your own stories.
+Below are instructions for (a) how to run this demo app locally and (b) how to customize it and insert your own stories.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
